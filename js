@@ -1,15 +1,4 @@
-const com1 = 'Macbook 13 Air M1';
-const com1narx  = '900$';
-const com1yil = '2020';
-const com2 = 'Macbook 13 Pro M2';
-const com2narx = '1080$';
-const com3 = 'Macbook 13 Air M2';
-const com3narx = '1300$';
-const com3yil = '2022';
-const com4 = 'Macbook 13 Pro M2';
-const com5 = 'IMac';
-const com5yil = '2029';
-const com5narx = '2900$'
+
 
 const computer = (com) => {
  if(com == 1){
@@ -32,4 +21,16 @@ const computer = (com) => {
  }
 
 const komputerlar = [1,2,3,4,5];
-console.log(computer(komputerlar[4]));
+const com1 = ['Macbook 13 Air M1'];
+const com1narx  = ['900$'];
+const com1yil = ['2020'];
+const com2 = ['Macbook 13 Pro M2'];
+const com2narx = ['1080$'];
+const com3 = ['Macbook 13 Air M2'];
+const com3narx = ['1300$'];
+const com3yil = ['2022'];
+const com4 = ['Macbook 13 Pro M2'];
+const com5 = ['IMac'];
+const com5yil = ['2029'];
+const com5narx = ['2900$']
+console.log(computer(komputerlar[0]))
