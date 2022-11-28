@@ -2,35 +2,28 @@
 
 const computer = (com) => {
  if(com == 1){
-    return `${com1} ${com1yil}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${com1narx}`;
+    return `${MacAirM1[0]} ${MacAirM1[1]}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${MacAirM1[2]}`;
  }
  else if(com == 2){
-    return `${com2} ${com1yil}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${com2narx}` ;
+    return `${MacAirM1[0]} ${MacProM1[1]}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${MacProM1[2]}` ;
  }
  else if(com == 3){
-    return `${com3} ${com3yil}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${com3narx}`;
+    return `${MacAirM2[0]} ${MacAirM2[1]}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${MacAirM2[2]}`;
  }
  else if(com == 4){
-    return `${com4} ${com3yil}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${com3narx}`;
+    return `${MacProM2[0]} ${MacProM2[1]}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${MacProM2[2]}`;
  }
  else if(com == 5){
-    return `${com5} ${com5yil}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${com5narx}`;
+    return `${IMac[0]} ${IMac[1]}-yil ishlab chiqarilgan. Hozirgi kundagi narxi ${IMac[2]}`;
  }
  else 
  return `Bizda hozircha 5 ta kompyuter haqida ma'lumot bor`;
  }
 
 const komputerlar = [1,2,3,4,5];
-const com1 = ['Macbook 13 Air M1'];
-const com1narx  = ['900$'];
-const com1yil = ['2020'];
-const com2 = ['Macbook 13 Pro M2'];
-const com2narx = ['1080$'];
-const com3 = ['Macbook 13 Air M2'];
-const com3narx = ['1300$'];
-const com3yil = ['2022'];
-const com4 = ['Macbook 13 Pro M2'];
-const com5 = ['IMac'];
-const com5yil = ['2029'];
-const com5narx = ['2900$']
-console.log(computer(komputerlar[0]))
+const MacAirM1 = ['Macbook 13 Air M1', '2020', '$900'];
+const MacProM1 = ['Macbook 13 Pro M1', '2020', '$1080'];
+const MacAirM2 = ['Macbook 13 Air M2', '2022', '$1300'];
+const MacProM2 = ['Macbook 13 Pro M2','2022', '1300$'];
+const IMac = ['IMac', '2022', '$4000'];
+console.log(computer(komputerlar[3]))
