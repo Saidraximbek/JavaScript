@@ -1,0 +1,42 @@
+const personOne = {
+     fullName: 'Mark Miller',
+     mass: 78,
+     height: 1.69,
+}
+
+const personTwo = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+}
+const oneBMI = personOne.mass/personOne.height**2; 
+const twoBMI = personTwo.mass/personTwo.height**2
+const calcBMI = (calc) =>{
+  if(calc===`${personOne.fullName}`){
+    
+    return `${personOne.fullName}ning BMI ${oneBMI} ekan`;
+  }
+  else
+  if(calc==`${personTwo.fullName}`){
+   
+    return `${personTwo.fullName}ning BMI ${twoBMI} `;
+  }
+  else
+  return `Bizda hozircha bunday ma'lumot mavjud emas!!!!!`
+}
+
+
+
+ const compareBMI = () =>{
+    if(oneBMI>twoBMI){
+      return`${personOne.fullName}ning BMI(${oneBMI}) ${personTwo.fullName}ning BMI(${twoBMI})dan kattaroq`;
+    }
+    else if(oneBMI<twoBMI){
+      return`${personTwo.fullName}ning BMI(${twoBMI}) ${personOne.fullName}ning BMI(${oneBMI})dan kattaroq`;
+    }
+    else return`Ikkala BMI ham teng`;
+ }
+
+
+console.log(calcBMI('John Smith'));
+console.log(compareBMI())
